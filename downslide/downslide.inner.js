@@ -239,7 +239,7 @@ Downslide.prototype = {
          * @param  {[Node]} target [目标节点]
          */
     _updateSelected: function (target) {
-        // 更新样式
+        // 更新样式[第一次如果没选中跳过]
         this.selectedDom && (this.selectedDom.className = "downslide-list-item");
         target.className = "downslide-list-item selected";
         // 更新selectedDom
