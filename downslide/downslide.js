@@ -252,7 +252,7 @@ Downslide.prototype = {
      */
   _updateSelected: function(target) {
     // 更新样式
-    this.selectedDom.className = "downslide-list-item";
+    this.selectedDom && (this.selectedDom.className = "downslide-list-item");
     target.className = "downslide-list-item selected";
     // 更新selectedDom
     this.selectedDom = target;
